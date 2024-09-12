@@ -6,15 +6,25 @@
     <title>SVG Example</title>
     <style>
         body {
-            display: flex;
-            justify-content: center;
-            /* align-items: center; */
-            /* height: 100vh; */
-            padding-top: 20px;
             margin: 0;
+            padding: 10px;
+            min-height: 100vh;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
         }
+
+        .top-bar {
+            width: 100%;
+            width: 200px;
+            height: 200px; /* Adjust the thickness as needed */
+            background-color: black;
+        }
+
         .svg-container {
-            width: 50vw;
+            width: 200px;
+            margin-top: 10px;
         }
         svg {
             width: 100%;
@@ -27,9 +37,11 @@
         .svg-container:hover svg path {
             fill: red;
         }
+
     </style>
 </head>
 <body>
+    <div class="top-bar"></div>
     <div class="svg-container">
         <a href="mailto:grayfk13@gmail.com">
             <!-- Replace this with your actual SVG content -->
